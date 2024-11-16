@@ -1,17 +1,15 @@
-import React from 'react';
-import ReactDOM from 'react-dom/client';
-import './index.css';
-import App from './App';
-import reportWebVitals from './reportWebVitals';
+import React from "react"
+import ReactDOM from "react-dom"
+import Joke from "./Joke.js"
 
-const root = ReactDOM.createRoot(document.getElementById('root'));
-root.render(
-  <React.StrictMode>
-    <App />
-  </React.StrictMode>
-);
-
-// If you want to start measuring performance in your app, pass a function
-// to log results (for example: reportWebVitals(console.log))
-// or send to an analytics endpoint. Learn more: https://bit.ly/CRA-vitals
-reportWebVitals();
+ReactDOM.render(
+  <>
+  
+  <Joke setup="knock knock" punchline="who's there"/>
+  <Joke setup="knock" punchline="knock who"/>
+  <Joke setup="knock knock" punchline="who's there"/>
+  <Joke setup="who" punchline="who's there"/>
+  <Joke punchline="It's hard to explain puns to kleptomaniacs because they always take things literally." />
+  </>,
+  document.getElementById("root")
+)
